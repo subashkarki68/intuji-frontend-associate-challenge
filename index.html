@@ -39,7 +39,9 @@
     </style>
   </head>
   <body>
-    <div class="flex w-screen h-screen bg-background font-jakarta">
+    <div
+      class="flex w-screen h-screen max-h-screen overflow-hidden bg-background font-jakarta"
+    >
       <!-- side section -->
       <aside
         class="flex flex-col justify-between gap-8 py-8 text-sm font-light bg-white w-52 md:w-72 shrink-0 text-dark-blue"
@@ -127,7 +129,7 @@
       <!-- Side section end -->
 
       <div
-        class="flex flex-row flex-1 flex-shrink-0 gap-8 px-4 my-4 md:px-8 md:my-8"
+        class="flex flex-row flex-1 flex-shrink-0 gap-8 px-4 my-4 overflow-scroll md:px-8 md:my-8"
       >
         <div class="flex flex-col w-3/4 gap-8">
           <label for="searchInput" class="sr-only">Search Box</label>
@@ -500,13 +502,57 @@
           <!-- OverView Section End -->
 
           <!-- Analytics Section -->
-          <section class="p-4 bg-white rounded-xl">
-            <h3 class="mb-4 text-lg font-semibold">Overview</h3>
-            
+          <section
+            class="flex flex-col justify-center p-4 bg-white rounded-xl text-dark-blue"
+          >
+            <!-- Header -->
+            <div class="flex flex-row justify-between">
+              <h3 class="mb-4 text-lg font-semibold">Analytics</h3>
+              <div class="flex flex-row items-center gap-8">
+                <div class="flex flex-row items-center gap-3">
+                  <div class="rounded-full size-4 bg-primary"></div>
+                  <span>Label 1</span>
+                </div>
+                <div class="flex flex-row items-center gap-3">
+                  <div class="rounded-full size-4 bg-[#F9BA33]"></div>
+                  <span>Label 2</span>
+                </div>
+                <div class="w-44">
+                  <div class="relative">
+                    <select
+                      name="frequency"
+                      id="frequency"
+                      class="w-full py-2 pl-3 pr-8 text-sm transition duration-300 bg-transparent border rounded shadow-sm appearance-none cursor-pointer placeholder:text-slate-400 text-slate-700 border-slate-200 ease focus:outline-none focus:border-slate-400 hover:border-slate-400 focus:shadow-md"
+                    >
+                      <option value="daily">Daily</option>
+                      <option value="weekly" selected>Weekly</option>
+                      <option value="monthly">Monthly</option>
+                      <option value="yearly">Yearly</option>
+                    </select>
+                    <svg
+                      width="17"
+                      height="18"
+                      viewBox="0 0 17 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 ml-1 absolute top-2.5 right-2.5 text-slate-700"
+                    >
+                      <path
+                        d="M11.5413 7.08252L8.50047 10.1234L5.45959 7.08252L4.45801 8.0841L8.50047 12.1266L12.5429 8.0841L11.5413 7.08252Z"
+                        fill="#0D163A"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Header end -->
+
+            <!-- Chart Start -->
+            <div>Hello</div>
+            <!-- Chart end -->
           </section>
           <!-- Analytics Section End -->
-
-
         </div>
         <div class="flex flex-col w-1/4">4</div>
       </div>
