@@ -124,6 +124,8 @@
           </div>
         </div>
       </aside>
+      <!-- Side section end -->
+
       <div
         class="flex flex-row flex-1 flex-shrink-0 gap-8 px-4 my-4 md:px-8 md:my-8"
       >
@@ -149,9 +151,9 @@
           <!-- OverView Section -->
           <section class="p-4 bg-white rounded-xl">
             <h3 class="mb-4 text-lg font-semibold">Overview</h3>
-            <div class="flex flex-row flex-wrap gap-4 text-white">
+            <div class="grid grid-cols-1 gap-4 text-white lg:grid-cols-2">
               <!-- Wallet Card Start-->
-              <div class="flex flex-col w-1/2 gap-2 p-6 bg-primary rounded-xl">
+              <div class="flex flex-col w-full gap-2 p-6 bg-primary rounded-xl">
                 <div class="flex flex-row items-center gap-4">
                   <div class="p-2 rounded-full border-light-primary border-1">
                     <svg
@@ -183,7 +185,7 @@
                     </svg>
                   </div>
                   <div class="flex flex-col gap-4">
-                    <span>Your Balance</span>
+                    <span class="text-xl font-semibold">Your Balance</span>
                     <div class="flex gap-1">
                       <img
                         src="./assets/icons/arrow.svg"
@@ -201,7 +203,7 @@
                   class="w-full mx-auto my-6 border-t border-white opacity-20"
                 ></div>
                 <div class="flex items-center justify-between">
-                  <span class="text-3xl">$ 28,891.138</span>
+                  <span class="text-3xl font-semibold">$ 28,891.138</span>
                   <img
                     src="./assets/icons/arrowRight.svg"
                     class="cursor-pointer size-6"
@@ -211,127 +213,288 @@
               </div>
               <!-- Wallet Card End -->
 
-              <!-- Wallet Card -->
-              <div class="flex flex-col w-1/2 gap-2 p-6 bg-primary rounded-xl">
+              <!-- Saving Card Start-->
+              <div
+                class="flex flex-col w-full gap-2 p-6 text-dark-blue border-[#DEDEDE] border-1 rounded-xl"
+              >
                 <div class="flex flex-row items-center gap-4">
-                  <div class="p-2 rounded-full border-light-primary border-1">
+                  <div class="p-2 rounded-full border-[#EEEEEE] border-1">
                     <svg
-                      width="32"
+                      width="33"
                       height="32"
-                      viewBox="0 0 32 32"
+                      viewBox="0 0 33 32"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        opacity="0.2"
-                        d="M24.0535 18.0667C23.4935 18.6134 23.1735 19.4 23.2535 20.24C23.3735 21.68 24.6935 22.7334 26.1335 22.7334H28.6668V24.32C28.6668 27.08 26.4135 29.3334 23.6535 29.3334H8.34683C5.58683 29.3334 3.3335 27.08 3.3335 24.32V15.3467C3.3335 12.5867 5.58683 10.3334 8.34683 10.3334H23.6535C26.4135 10.3334 28.6668 12.5867 28.6668 15.3467V17.2667H25.9735C25.2268 17.2667 24.5468 17.56 24.0535 18.0667Z"
-                        fill="white"
+                        opacity="0.4"
+                        d="M17.6865 7.83997H7.31315C5.03315 7.83997 3.1665 9.70661 3.1665 11.9866V27.1333C3.1665 29.0666 4.55317 29.8933 6.2465 28.9466L11.4865 26.0266C12.0465 25.7199 12.9532 25.7199 13.4998 26.0266L18.7398 28.9466C20.4332 29.8933 21.8198 29.0666 21.8198 27.1333V11.9866C21.8332 9.70661 19.9665 7.83997 17.6865 7.83997Z"
+                        fill="#3BBB6E"
                       />
                       <path
-                        opacity="0.8"
-                        d="M19.8002 5.26671V10.3334H8.34683C5.58683 10.3334 3.3335 12.5867 3.3335 15.3467V10.4534C3.3335 8.86673 4.30683 7.45334 5.78683 6.89334L16.3735 2.89334C18.0268 2.28 19.8002 3.49338 19.8002 5.26671Z"
-                        fill="white"
-                      />
-                      <path
-                        opacity="0.8"
-                        d="M30.08 18.6267V21.3734C30.08 22.1067 29.4934 22.7067 28.7467 22.7334H26.1334C24.6934 22.7334 23.3734 21.68 23.2534 20.24C23.1734 19.4 23.4934 18.6134 24.0534 18.0667C24.5467 17.56 25.2267 17.2667 25.9734 17.2667H28.7467C29.4934 17.2934 30.08 17.8933 30.08 18.6267Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M18.6668 17H9.3335C8.78683 17 8.3335 16.5467 8.3335 16C8.3335 15.4533 8.78683 15 9.3335 15H18.6668C19.2135 15 19.6668 15.4533 19.6668 16C19.6668 16.5467 19.2135 17 18.6668 17Z"
-                        fill="white"
+                        d="M29.8332 6.81327V21.96C29.8332 23.8933 28.4465 24.7066 26.7532 23.7733L21.8332 21.0266V11.9866C21.8332 9.70661 19.9665 7.83997 17.6865 7.83997H11.1665V6.81327C11.1665 4.53327 13.0332 2.66663 15.3132 2.66663H25.6865C27.9665 2.66663 29.8332 4.53327 29.8332 6.81327Z"
+                        fill="#3BBB6E"
                       />
                     </svg>
                   </div>
                   <div class="flex flex-col gap-4">
-                    <span>Your Balance</span>
+                    <span class="text-xl font-semibold">Saving</span>
                     <div class="flex gap-1">
-                      <img
-                        src="./assets/icons/arrow.svg"
-                        class="size-4"
-                        alt="Arrow"
-                      />
-                      <span class="text-xs opacity-60"
-                        >15 % compared with last month</span
+                      <svg
+                        width="14"
+                        height="15"
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                    </div>
-                  </div>
-                </div>
-                <!-- Divider -->
-                <div
-                  class="w-full mx-auto my-6 border-t border-white opacity-20"
-                ></div>
-                <div class="flex items-center justify-between">
-                  <span class="text-3xl">$ 28,891.138</span>
-                  <img
-                    src="./assets/icons/arrowRight.svg"
-                    class="cursor-pointer size-6"
-                    alt="Right Arrow"
-                  />
-                </div>
-              </div>
-              <!-- Wallet Card End -->
+                        <path
+                          opacity="0.4"
+                          d="M9.444 1.66663H4.55567C2.43234 1.66663 1.1665 2.93246 1.1665 5.05579V9.93829C1.1665 12.0675 2.43234 13.3333 4.55567 13.3333H9.43817C11.5615 13.3333 12.8273 12.0675 12.8273 9.94413V5.05579C12.8332 2.93246 11.5673 1.66663 9.444 1.66663Z"
+                          fill="#FE3766"
+                        />
+                        <path
+                          d="M9.76954 4.58337H6.95204C6.71287 4.58337 6.51454 4.78171 6.51454 5.02087C6.51454 5.26004 6.71287 5.45837 6.95204 5.45837H8.7137L4.21037 9.96171C4.0412 10.1309 4.0412 10.4109 4.21037 10.58C4.29787 10.6675 4.4087 10.7084 4.51954 10.7084C4.63037 10.7084 4.7412 10.6675 4.8287 10.58L9.33204 6.07671V7.83837C9.33204 8.07754 9.53037 8.27587 9.76954 8.27587C10.0087 8.27587 10.207 8.07754 10.207 7.83837V5.02087C10.207 4.78171 10.0087 4.58337 9.76954 4.58337Z"
+                          fill="#FE3766"
+                        />
+                      </svg>
 
-              <!-- Wallet Card Start-->
-              <div class="flex flex-col w-1/2 gap-2 p-6 bg-primary rounded-xl">
-                <div class="flex flex-row items-center gap-4">
-                  <div class="p-2 rounded-full border-light-primary border-1">
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        opacity="0.2"
-                        d="M24.0535 18.0667C23.4935 18.6134 23.1735 19.4 23.2535 20.24C23.3735 21.68 24.6935 22.7334 26.1335 22.7334H28.6668V24.32C28.6668 27.08 26.4135 29.3334 23.6535 29.3334H8.34683C5.58683 29.3334 3.3335 27.08 3.3335 24.32V15.3467C3.3335 12.5867 5.58683 10.3334 8.34683 10.3334H23.6535C26.4135 10.3334 28.6668 12.5867 28.6668 15.3467V17.2667H25.9735C25.2268 17.2667 24.5468 17.56 24.0535 18.0667Z"
-                        fill="white"
-                      />
-                      <path
-                        opacity="0.8"
-                        d="M19.8002 5.26671V10.3334H8.34683C5.58683 10.3334 3.3335 12.5867 3.3335 15.3467V10.4534C3.3335 8.86673 4.30683 7.45334 5.78683 6.89334L16.3735 2.89334C18.0268 2.28 19.8002 3.49338 19.8002 5.26671Z"
-                        fill="white"
-                      />
-                      <path
-                        opacity="0.8"
-                        d="M30.08 18.6267V21.3734C30.08 22.1067 29.4934 22.7067 28.7467 22.7334H26.1334C24.6934 22.7334 23.3734 21.68 23.2534 20.24C23.1734 19.4 23.4934 18.6134 24.0534 18.0667C24.5467 17.56 25.2267 17.2667 25.9734 17.2667H28.7467C29.4934 17.2934 30.08 17.8933 30.08 18.6267Z"
-                        fill="white"
-                      />
-                      <path
-                        d="M18.6668 17H9.3335C8.78683 17 8.3335 16.5467 8.3335 16C8.3335 15.4533 8.78683 15 9.3335 15H18.6668C19.2135 15 19.6668 15.4533 19.6668 16C19.6668 16.5467 19.2135 17 18.6668 17Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <span>Your Balance</span>
-                    <div class="flex gap-1">
-                      <img
-                        src="./assets/icons/arrow.svg"
-                        class="size-4"
-                        alt="Arrow"
-                      />
                       <span class="text-xs opacity-60"
-                        >15 % compared with last month</span
+                        >10 % compared with last month</span
                       >
                     </div>
                   </div>
                 </div>
                 <!-- Divider -->
                 <div
-                  class="w-full mx-auto my-6 border-t border-white opacity-20"
+                  class="w-full mx-auto my-6 border-t border-dark-blue opacity-20"
                 ></div>
                 <div class="flex items-center justify-between">
-                  <span class="text-3xl">$ 28,891.138</span>
-                  <img
-                    src="./assets/icons/arrowRight.svg"
-                    class="cursor-pointer size-6"
-                    alt="Right Arrow"
-                  />
+                  <span class="text-3xl font-semibold">$ 1,050.44</span>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="cursor-pointer"
+                  >
+                    <path
+                      d="M14.9302 5.93005L21.0002 12.0001L14.9302 18.0701"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.5098 12H20.8298"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4 12H7.47"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
                 </div>
               </div>
-              <!-- Wallet Card End -->
+              <!-- Saving Card End -->
+
+              <!-- Expenses Card Start-->
+              <div
+                class="flex flex-col w-full gap-2 p-6 text-dark-blue border-[#DEDEDE] border-1 rounded-xl"
+              >
+                <div class="flex flex-row items-center gap-4">
+                  <div class="p-2 rounded-full border-[#EEEEEE] border-1">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M22.6934 28.8866L18.0534 26.5666C16.76 25.9266 15.2534 25.9266 13.96 26.5666L9.32004 28.8866C5.33338 30.8733 1.13338 26.5933 3.21338 22.6599L4.30671 20.6066C4.45338 20.3266 4.69338 20.0999 4.98671 19.9666L21.84 12.3666C22.5334 12.0599 23.3467 12.3399 23.6934 13.0066L28.7734 22.6599C30.8534 26.5933 26.6667 30.8733 22.6934 28.8866Z"
+                        fill="#F9BA33"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M20.8001 10.7533L9.76011 15.7267C8.52011 16.2867 7.26677 14.9533 7.90677 13.7533L11.9601 6.05999C13.6801 2.79332 18.3468 2.79332 20.0668 6.05999L21.4934 8.77999C21.8668 9.51332 21.5468 10.42 20.8001 10.7533Z"
+                        fill="#F9BA33"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <span class="text-xl font-semibold">Expenses</span>
+                    <div class="flex gap-1">
+                      <svg
+                        width="14"
+                        height="15"
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M9.444 1.66663H4.55567C2.43234 1.66663 1.1665 2.93246 1.1665 5.05579V9.93829C1.1665 12.0675 2.43234 13.3333 4.55567 13.3333H9.43817C11.5615 13.3333 12.8273 12.0675 12.8273 9.94413V5.05579C12.8332 2.93246 11.5673 1.66663 9.444 1.66663Z"
+                          fill="#F9BA33"
+                        />
+                        <path
+                          d="M9.76954 4.58337H6.95204C6.71287 4.58337 6.51454 4.78171 6.51454 5.02087C6.51454 5.26004 6.71287 5.45837 6.95204 5.45837H8.7137L4.21037 9.96171C4.0412 10.1309 4.0412 10.4109 4.21037 10.58C4.29787 10.6675 4.4087 10.7084 4.51954 10.7084C4.63037 10.7084 4.7412 10.6675 4.8287 10.58L9.33204 6.07671V7.83837C9.33204 8.07754 9.53037 8.27587 9.76954 8.27587C10.0087 8.27587 10.207 8.07754 10.207 7.83837V5.02087C10.207 4.78171 10.0087 4.58337 9.76954 4.58337Z"
+                          fill="#F9BA33"
+                        />
+                      </svg>
+
+                      <span class="text-xs opacity-60"
+                        >2 % compared with last month</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Divider -->
+                <div
+                  class="w-full mx-auto my-6 border-t border-dark-blue opacity-20"
+                ></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-3xl font-semibold">$ 200.31</span>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="cursor-pointer"
+                  >
+                    <path
+                      d="M14.9302 5.93005L21.0002 12.0001L14.9302 18.0701"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.5098 12H20.8298"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4 12H7.47"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- Expenses Card End -->
+
+              <!-- Incomes Card Start-->
+              <div
+                class="flex flex-col w-full gap-2 p-6 text-dark-blue border-[#DEDEDE] border-1 rounded-xl"
+              >
+                <div class="flex flex-row items-center gap-4">
+                  <div class="p-2 rounded-full border-[#EEEEEE] border-1">
+                    <svg
+                      width="32"
+                      height="33"
+                      viewBox="0 0 32 33"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="rotate-180"
+                    >
+                      <path
+                        d="M22.6934 28.8866L18.0534 26.5666C16.76 25.9266 15.2534 25.9266 13.96 26.5666L9.32004 28.8866C5.33338 30.8733 1.13338 26.5933 3.21338 22.6599L4.30671 20.6066C4.45338 20.3266 4.69338 20.0999 4.98671 19.9666L21.84 12.3666C22.5334 12.0599 23.3467 12.3399 23.6934 13.0066L28.7734 22.6599C30.8534 26.5933 26.6667 30.8733 22.6934 28.8866Z"
+                        fill="#1775E4"
+                      />
+                      <path
+                        opacity="0.4"
+                        d="M20.8001 10.7533L9.76011 15.7267C8.52011 16.2867 7.26677 14.9533 7.90677 13.7533L11.9601 6.05999C13.6801 2.79332 18.3468 2.79332 20.0668 6.05999L21.4934 8.77999C21.8668 9.51332 21.5468 10.42 20.8001 10.7533Z"
+                        fill="#1775E4"
+                      />
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <span class="text-xl font-semibold">Incomes</span>
+                    <div class="flex gap-1">
+                      <svg
+                        width="14"
+                        height="15"
+                        viewBox="0 0 14 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          opacity="0.4"
+                          d="M9.444 1.66663H4.55567C2.43234 1.66663 1.1665 2.93246 1.1665 5.05579V9.93829C1.1665 12.0675 2.43234 13.3333 4.55567 13.3333H9.43817C11.5615 13.3333 12.8273 12.0675 12.8273 9.94413V5.05579C12.8332 2.93246 11.5673 1.66663 9.444 1.66663Z"
+                          fill="#1775E4"
+                        />
+                        <path
+                          d="M9.76954 4.58337H6.95204C6.71287 4.58337 6.51454 4.78171 6.51454 5.02087C6.51454 5.26004 6.71287 5.45837 6.95204 5.45837H8.7137L4.21037 9.96171C4.0412 10.1309 4.0412 10.4109 4.21037 10.58C4.29787 10.6675 4.4087 10.7084 4.51954 10.7084C4.63037 10.7084 4.7412 10.6675 4.8287 10.58L9.33204 6.07671V7.83837C9.33204 8.07754 9.53037 8.27587 9.76954 8.27587C10.0087 8.27587 10.207 8.07754 10.207 7.83837V5.02087C10.207 4.78171 10.0087 4.58337 9.76954 4.58337Z"
+                          fill="#1775E4"
+                        />
+                      </svg>
+
+                      <span class="text-xs opacity-60"
+                        >8 % compared with last month</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <!-- Divider -->
+                <div
+                  class="w-full mx-auto my-6 border-t border-dark-blue opacity-20"
+                ></div>
+                <div class="flex items-center justify-between">
+                  <span class="text-3xl font-semibold">$ 21,121.02</span>
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="cursor-pointer"
+                  >
+                    <path
+                      d="M14.9302 5.93005L21.0002 12.0001L14.9302 18.0701"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M11.5098 12H20.8298"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4 12H7.47"
+                      stroke="#0d163a"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <!-- Incomes Card End -->
             </div>
           </section>
         </div>
