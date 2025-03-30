@@ -653,9 +653,9 @@
               </span>
             </div>
           </div>
-          <section class="w-full p-4 bg-white">
+          <section class="w-full p-4 bg-white pb-14 rounded-xl">
             <!-- Saving plan card start -->
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row items-baseline justify-between">
               <h3 class="mb-4 text-lg font-semibold">Saving Plan</h3>
               <a href="#" class="text-primrary">See All</a>
             </div>
@@ -682,7 +682,15 @@
                   >
                   <span>48%</span>
                 </div>
-                <div class="w-full text-center bg-red-100">
+                <!-- Progress Bar -->
+                <div class="w-full bg-[#DEDEDE] rounded-full h-2.5">
+                  <div
+                    class="bg-[#4745A4] h-2.5 rounded-full"
+                    style="width: 48%"
+                  ></div>
+                </div>
+                <!-- Progress Bar end -->
+                <!-- <div class="w-full text-center">
                   <svg
                     viewBox="0 0 299 9"
                     fill="none"
@@ -697,7 +705,7 @@
                       fill="#4745A4"
                     />
                   </svg>
-                </div>
+                </div> -->
               </div>
 
               <!-- plan2 -->
@@ -715,7 +723,15 @@
                   >
                   <span class="text-[#F9BA33]">79%</span>
                 </div>
-                <div class="w-full text-center bg-red-100">
+                <!-- Progress Bar -->
+                <div class="w-full bg-[#DEDEDE] rounded-full h-2.5">
+                  <div
+                    class="bg-[#F9BA33] h-2.5 rounded-full"
+                    style="width: 79%"
+                  ></div>
+                </div>
+                <!-- Progress Bar end -->
+                <!-- <div class="w-full text-center">
                   <svg
                     viewBox="0 0 299 9"
                     fill="none"
@@ -730,7 +746,7 @@
                       fill="#F9BA33"
                     />
                   </svg>
-                </div>
+                </div> -->
               </div>
 
               <!-- plan3 -->
@@ -748,7 +764,15 @@
                   >
                   <span class="text-[#3BBB6E]">32%</span>
                 </div>
-                <div class="w-full text-center bg-red-100">
+                <!-- Progress Bar -->
+                <div class="w-full bg-[#DEDEDE] rounded-full h-2.5">
+                  <div
+                    class="bg-[#3BBB6E] h-2.5 rounded-full"
+                    style="width: 32%"
+                  ></div>
+                </div>
+                <!-- Progress Bar end -->
+                <!-- <div class="w-full text-center">
                   <svg
                     viewBox="0 0 299 9"
                     fill="none"
@@ -763,12 +787,64 @@
                       fill="#3BBB6E"
                     />
                   </svg>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- Plan List end -->
             <!-- Saving plan card end -->
           </section>
+          <!-- Recent Transactions card start -->
+          <section class="w-full p-4 bg-white rounded-xl">
+            <div class="flex flex-row items-baseline justify-between">
+              <h3 class="mb-4 text-lg font-semibold">Recent Transactions</h3>
+              <a href="#" class="text-primrary">See All</a>
+            </div>
+
+            <!-- Divider -->
+            <div
+              class="w-full mx-auto my-4 border-t border-dark-blue opacity-10"
+            ></div>
+            <!-- plan1 -->
+            <div class="flex flex-col gap-4">
+              <div class="flex gap-8 justofy-between">
+                <h4 class="text-sm">Bali Vacation</h4>
+                <span class="text-xs opacity-50">Target: August 25 2022</span>
+              </div>
+              <div class="flex justify-between">
+                <span class="text-xl font-semibold"
+                  >$ 1950,21
+                  <span class="text-xs font-medium opacity-60"
+                    >/ $ 4000</span
+                  ></span
+                >
+                <span>48%</span>
+              </div>
+              <div class="w-full text-center">
+                <!-- Gallery Icon -->
+
+                <div
+                  class="relative hidden group has-tooltip lg:block"
+                  title="Messages"
+                >
+                  <div
+                    class="flex items-center justify-center duration-150 cursor-pointer hover:animate-pulse border-1 bg-placeholder rounded-3xl border-placeholder group-hover:border-primary"
+                  >
+                    <img
+                      src="./assets/icons/gallery.svg"
+                      alt="Gallery"
+                      class="mx-3 my-2 size-5 group-hover:scale-110"
+                    />
+                  </div>
+                  <span
+                    class="absolute hidden px-2 py-1 text-xs text-white -translate-x-1/2 rounded bg-dark-blue whitespace-nowrap left-1/2 -bottom-8 group-hover:inline-block"
+                  >
+                    Gallery
+                  </span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Recent Transactions card end -->
         </div>
         <!-- Right most part end -->
       </div>
