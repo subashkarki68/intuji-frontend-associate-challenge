@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finance</title>
+
+    <!-- Load google FOnts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="script.js"></script>
+
+    <!-- Edit Tailwind css theme -->
+    <style type="text/tailwindcss">
+      @theme {
+        /* colors */
+        --color-background: #f7f7fb;
+        --color-placeholder: #d9d9d9;
+        --color-purple: #4745a5;
+        --color-dark-blue: #0d163a;
+
+        /* fonts */
+        --font-jakarta: "Plus Jakarta Sans", sans-serif;
+        --font-weight-light: 300;
+        --font-weight-normal: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex w-screen h-screen bg-background font-jakarta">
+      <div
+        class="flex flex-col justify-between gap-8 py-8 text-sm font-light bg-white w-52 md:w-72 shrink-0 text-dark-blue"
+      >
+        <div class="flex flex-col">
+          <div
+            class="flex items-center justify-center mx-12 mb-10 h-14 bg-placeholder"
+          >
+            <img src="./assets/icons/gallery.svg" alt="Icon" class="size-6" />
+          </div>
+          <div class="flex flex-col">
+            <div class="flex gap-4 px-16 py-4 font-medium cursor-pointer">
+              <img
+                src="./assets/icons/dashboard.svg"
+                alt="Dashboard"
+                class="size-6"
+              />
+              <h2>Dashboard</h2>
+            </div>
+            <div class="flex gap-4 px-16 py-4 cursor-pointer">
+              <img
+                src="./assets/icons/calender.svg"
+                alt="Schedule"
+                class="size-6"
+              />
+              <h2>Schedule</h2>
+            </div>
+            <div class="flex gap-4 px-16 py-4 cursor-pointer">
+              <img
+                src="./assets/icons/message.svg"
+                alt="Schedule"
+                class="size-6"
+              />
+              <h2>Message</h2>
+            </div>
+            <div class="flex gap-4 px-16 py-4 cursor-pointer">
+              <img
+                src="./assets/icons/analytics.svg"
+                alt="Analytics"
+                class="size-6"
+              />
+              <h2>Analytics</h2>
+            </div>
+            <div class="flex gap-4 px-16 py-4 cursor-pointer">
+              <img src="./assets/icons/people.svg" alt="Team" class="size-6" />
+              <h2>Team</h2>
+            </div>
+          </div>
+          <div
+            class="w-[60%] mx-auto border-t border-dark-blue opacity-30 my-6"
+          ></div>
+          <div>
+            <div class="flex gap-4 px-16 py-4 cursor-pointer">
+              <img
+                src="./assets/icons/person.svg"
+                alt="Profile"
+                class="size-6"
+              />
+              <h2>Profile</h2>
+            </div>
+            <div class="flex gap-4 px-16 py-4 cursor-pointer">
+              <img
+                src="./assets/icons/gear.svg"
+                alt="Settings"
+                class="size-6"
+              />
+              <h2>Settings</h2>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="flex gap-4 px-16 py-4 cursor-pointer">
+            <img src="./assets/icons/warning.svg" alt="Help" class="size-6" />
+            <h2>Help</h2>
+          </div>
+          <div class="flex gap-4 px-16 py-4 cursor-pointer">
+            <img src="./assets/icons/logout.svg" alt="Logout" class="size-6" />
+            <h2>Logout</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-1 gap-8 px-4 my-4 md:px-8 md:my-8">
+        <div class="flex flex-col w-3/4">
+          <label for="searchInput" class="sr-only">Search</label>
+          <label
+            for="searchInput"
+            class="flex items-center gap-4 px-6 py-3 transition-shadow duration-200 bg-white shadow-sm rounded-3xl hover:shadow-md focus-within:ring-2 focus-within:ring-purple"
+          >
+              <img
+                src="./assets/icons/eyeglass.svg"
+                alt="Search"
+                class="size-5"
+              />
+              <input
+                class="flex-1 w-full text-base bg-transparent placeholder:text-gray-400 focus:outline-none"
+                id="searchInput"
+                type="text"
+                placeholder="Search here..."
+              />
+          </label>
+        </div>
+        <div class="flex flex-col w-1/4">4</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
