@@ -14,10 +14,6 @@
       rel="stylesheet"
     />
 
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="script.js"></script>
-
     <!-- Edit Tailwind css theme -->
     <style type="text/tailwindcss">
       @theme {
@@ -885,88 +881,99 @@
 
             <!-- Transaction 3 -->
             <div class="flex flex-col gap-4 mb-8">
-                <div class="flex items-center justify-between w-full text-center">
-                  <div class="flex items-center gap-3">
-                    <!-- Gallery Icon -->
+              <div class="flex items-center justify-between w-full text-center">
+                <div class="flex items-center gap-3">
+                  <!-- Gallery Icon -->
+                  <div
+                    class="relative hidden group has-tooltip lg:block"
+                    title="Messages"
+                  >
                     <div
-                      class="relative hidden group has-tooltip lg:block"
-                      title="Messages"
+                      class="flex items-center justify-center duration-150 cursor-pointer hover:animate-pulse border-1 bg-placeholder rounded-3xl border-placeholder group-hover:border-primary"
                     >
-                      <div
-                        class="flex items-center justify-center duration-150 cursor-pointer hover:animate-pulse border-1 bg-placeholder rounded-3xl border-placeholder group-hover:border-primary"
-                      >
-                        <img
-                          src="./assets/icons/gallery.svg"
-                          alt="Gallery"
-                          class="mx-3 my-3 size-5 group-hover:scale-110"
-                        />
-                      </div>
-                      <span
-                        class="absolute hidden px-2 py-1 text-xs text-white -translate-x-1/2 rounded bg-dark-blue whitespace-nowrap left-1/2 -bottom-8 group-hover:inline-block"
-                      >
-                        Spotify Icon
-                      </span>
+                      <img
+                        src="./assets/icons/gallery.svg"
+                        alt="Gallery"
+                        class="mx-3 my-3 size-5 group-hover:scale-110"
+                      />
                     </div>
-                    <div class="flex flex-col items-start gap-1">
-                      <h4 class="font-medium text-md">Spotify</h4>
-                      <span class="text-xs opacity-50">August 20, 2022</span>
-                    </div>
+                    <span
+                      class="absolute hidden px-2 py-1 text-xs text-white -translate-x-1/2 rounded bg-dark-blue whitespace-nowrap left-1/2 -bottom-8 group-hover:inline-block"
+                    >
+                      Spotify Icon
+                    </span>
                   </div>
-                  <div class="flex flex-col">
-                    <span class="font-medium">$ 15</span>
-                    <span class="text-[#3BBB6E] text-xs font-medium"
-                      >Complete</span
-                    >
+                  <div class="flex flex-col items-start gap-1">
+                    <h4 class="font-medium text-md">Spotify</h4>
+                    <span class="text-xs opacity-50">August 20, 2022</span>
                   </div>
                 </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">$ 15</span>
+                  <span class="text-[#3BBB6E] text-xs font-medium"
+                    >Complete</span
+                  >
+                </div>
               </div>
-              <!-- Transaction 3 end-->
+            </div>
+            <!-- Transaction 3 end-->
 
-              <!-- Transaction 4 -->
+            <!-- Transaction 4 -->
             <div class="flex flex-col gap-4 mb-8">
-                <div class="flex items-center justify-between w-full text-center">
-                  <div class="flex items-center gap-3">
-                    <!-- Gallery Icon -->
+              <div class="flex items-center justify-between w-full text-center">
+                <div class="flex items-center gap-3">
+                  <!-- Gallery Icon -->
+                  <div
+                    class="relative hidden group has-tooltip lg:block"
+                    title="Messages"
+                  >
                     <div
-                      class="relative hidden group has-tooltip lg:block"
-                      title="Messages"
+                      class="flex items-center justify-center duration-150 cursor-pointer hover:animate-pulse border-1 bg-placeholder rounded-3xl border-placeholder group-hover:border-primary"
                     >
-                      <div
-                        class="flex items-center justify-center duration-150 cursor-pointer hover:animate-pulse border-1 bg-placeholder rounded-3xl border-placeholder group-hover:border-primary"
-                      >
-                        <img
-                          src="./assets/icons/gallery.svg"
-                          alt="Gallery"
-                          class="mx-3 my-3 size-5 group-hover:scale-110"
-                        />
-                      </div>
-                      <span
-                        class="absolute hidden px-2 py-1 text-xs text-white -translate-x-1/2 rounded bg-dark-blue whitespace-nowrap left-1/2 -bottom-8 group-hover:inline-block"
-                      >
-                        Freepik Icon
-                      </span>
+                      <img
+                        src="./assets/icons/gallery.svg"
+                        alt="Gallery"
+                        class="mx-3 my-3 size-5 group-hover:scale-110"
+                      />
                     </div>
-                    <div class="flex flex-col items-start gap-1">
-                      <h4 class="font-medium text-md">Freepik</h4>
-                      <span class="text-xs opacity-50">August 20, 2022</span>
-                    </div>
+                    <span
+                      class="absolute hidden px-2 py-1 text-xs text-white -translate-x-1/2 rounded bg-dark-blue whitespace-nowrap left-1/2 -bottom-8 group-hover:inline-block"
+                    >
+                      Freepik Icon
+                    </span>
                   </div>
-                  <div class="flex flex-col">
-                    <span class="font-medium">$ 300</span>
-                    <span class="text-[#3BBB6E] text-xs font-medium"
-                      >Complete</span
-                    >
+                  <div class="flex flex-col items-start gap-1">
+                    <h4 class="font-medium text-md">Freepik</h4>
+                    <span class="text-xs opacity-50">August 20, 2022</span>
                   </div>
                 </div>
+                <div class="flex flex-col">
+                  <span class="font-medium">$ 300</span>
+                  <span class="text-[#3BBB6E] text-xs font-medium"
+                    >Complete</span
+                  >
+                </div>
               </div>
-              <!-- Transaction 4 end-->
-
+            </div>
+            <!-- Transaction 4 end-->
           </section>
           <!-- Recent Transactions card end -->
         </div>
         <!-- Right most part end -->
       </div>
     </div>
-    <script src="index.js"></script>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Load ChartJS Library -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+      integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom my JS -->
+    <script src="script.js"></script>
   </body>
 </html>
