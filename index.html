@@ -40,7 +40,8 @@
     >
       <!-- side section -->
       <aside
-        class="flex flex-col justify-between gap-8 py-8 text-sm font-light bg-white w-52 md:w-72 shrink-0 text-dark-blue"
+        class="flex flex-col justify-between gap-8 py-8 text-sm font-light transition-all duration-700 bg-white w-52 md:w-72 shrink-0 text-dark-blue"
+        id="side-nav"
       >
         <div class="flex flex-col">
           <div
@@ -207,6 +208,13 @@
             <div
               class="flex items-center h-16 gap-4 px-6 py-4 mt-2 transition-shadow duration-200 bg-white shadow-sm lg:hidden w-fit cursor-text rounded-3xl"
             >
+              <span id="burger-menu" class="lg:hidden">
+                <img
+                  src="./assets/icons/burger.svg"
+                  class="transition-all duration-200 rounded-full size-8 hover:cursor-pointer active:animate-ping"
+                  alt="Menu"
+                />
+              </span>
               <!-- Bell Icon -->
               <div class="relative group has-tooltip" title="Notifications">
                 <div
@@ -291,23 +299,25 @@
                 </span>
               </div>
             </div>
-            <label for="searchInput" class="sr-only">Search Box</label>
-            <label
-              for="searchInput"
-              class="flex items-center h-16 gap-4 px-6 py-4 mt-2 transition-shadow duration-200 bg-white shadow-sm cursor-text rounded-3xl hover:shadow-md focus-within:ring-2 focus-within:ring-primary"
-            >
-              <img
-                src="./assets/icons/eyeglass.svg"
-                alt="Search"
-                class="size-5"
-              />
-              <input
-                class="flex-1 w-full text-base bg-transparent placeholder:text-gray-400 focus:outline-none"
-                id="searchInput"
-                type="text"
-                placeholder="Search here..."
-              />
-            </label>
+            <div class="flex items-center gap-8">
+              <label for="searchInput" class="sr-only">Search Box</label>
+              <label
+                for="searchInput"
+                class="flex items-center flex-1 h-16 gap-4 px-6 py-4 mt-2 transition-shadow duration-200 bg-white shadow-sm cursor-text rounded-3xl hover:shadow-md focus-within:ring-2 focus-within:ring-primary"
+              >
+                <img
+                  src="./assets/icons/eyeglass.svg"
+                  alt="Search"
+                  class="size-5"
+                />
+                <input
+                  class="flex-1 w-full text-base bg-transparent placeholder:text-gray-400 focus:outline-none"
+                  id="searchInput"
+                  type="text"
+                  placeholder="Search here..."
+                />
+              </label>
+            </div>
 
             <!-- OverView Section -->
             <section class="p-4 bg-white shadow-xl rounded-xl">
@@ -720,7 +730,9 @@
             <!-- Analytics Section End -->
           </div>
           <!-- Right most part Start -->
-          <div class="flex flex-col items-center col-span-12 gap-8 lg:col-span-4 text-dark-blue">
+          <div
+            class="flex flex-col items-center col-span-12 gap-8 lg:col-span-4 text-dark-blue"
+          >
             <div
               class="items-center hidden w-full h-16 gap-4 px-6 py-4 mt-2 transition-shadow duration-200 bg-white shadow-sm lg:flex cursor-text rounded-3xl"
             >
@@ -1145,5 +1157,6 @@
     <!-- Custom my JS -->
     <script src="data/chartData.js"></script>
     <script src="scripts/chart.js"></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>
